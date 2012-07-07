@@ -1,0 +1,15 @@
+# Ignore bundler config
+/.bundle
+
+# Ignore SASS compiled files
+/.sass-cache
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+# Ignore environment configuration
+/.env
+/.env.development
+/.env.test
+/.env.production

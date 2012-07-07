@@ -1,0 +1,14 @@
+development: &defaults
+  adapter:  <%= ENV.fetch("DB_ADAPTER") %>
+  database: <%= ENV.fetch("DB_NAME") %>
+  username: <%= ENV.fetch("DB_USER") %>
+  password: <%= ENV.fetch("DB_PASSWORD") %>
+  min_messages: warning
+  timeout: 5000
+
+test:
+  << : *defaults
+  database: <%= ENV.fetch("DB_NAME") %>_test
+
+production:
+  << : *defaults
