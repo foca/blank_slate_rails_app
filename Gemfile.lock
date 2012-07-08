@@ -55,9 +55,17 @@ GEM
     eventmachine (0.12.10)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    factory_girl (3.5.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (3.5.0)
+      factory_girl (~> 3.5.0)
+      railties (>= 3.0.0)
     faye-websocket (0.4.6)
       eventmachine (>= 0.12.0)
     ffi (1.0.11)
+    fixture_builder (0.3.3)
+      activerecord (>= 2)
+      activesupport (>= 2)
     handlebars_assets (0.5.0)
       execjs (>= 1.2.9)
       sprockets (>= 2.0.3)
@@ -157,6 +165,8 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 2.0.4.0)
   debugger
+  factory_girl_rails (~> 3.0)
+  fixture_builder
   handlebars_assets (~> 0.5)
   jbuilder
   minitest-rails

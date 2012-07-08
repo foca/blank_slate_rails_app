@@ -20,5 +20,7 @@ group :test, :development do
   gem 'minitest-rails'
   gem 'minitest-rails-capybara'
   gem 'poltergeist'
+  gem 'factory_girl_rails', '~> 3.0'
+  gem 'fixture_builder'
   gem 'debugger'
 end
