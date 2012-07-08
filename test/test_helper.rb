@@ -9,6 +9,9 @@ class MiniTest::Rails::ActiveSupport::TestCase
   fixtures :all
 end
 
+# Require all support files.
+Dir["#{Rails.root}/test/support/**/*.rb"].each { |file| require file }
+
 silence_warnings do
   ::ActiveSupport::TestCase = MiniTest::Rails::ActiveSupport::TestCase
 end
