@@ -3,3 +3,4 @@
 
 require "rails/behaviors"
 require "bootstrap-sass"
+require "handlebars_assets"

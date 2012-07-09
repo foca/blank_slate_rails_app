@@ -1,5 +1,9 @@
 requirejs.config({
     shim: {
+        "templates": {
+            deps:    ["handlebars.runtime"],
+            exports: "JST"
+        },
         "jquery": {
             deps:    [],
             exports: "jQuery"
