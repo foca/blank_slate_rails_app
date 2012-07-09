@@ -5,6 +5,10 @@ This app contains just the minimum configuration needed to start coding right
 away on the things that matter. And it's easier to maintain than a rails
 template.
 
+I use this app with [this script][script] to create new Rails applications.
+
+[script]: https://gist.github.com/3063978
+
 Setup
 -----
 
