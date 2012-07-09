@@ -8,6 +8,7 @@ update() {
   wget -O "vendor/assets/javascripts/${name}.js" $url &>/dev/null && echo "  OK!" 1>&2 || echo "  FAIL!" 1>&2;
 }
 
-update "backbone"   "http://backbonejs.org/backbone-min.js"
-update "underscore" "http://underscorejs.org/underscore-min.js"
-update "jquery"     "http://code.jquery.com/jquery-latest.min.js"
+update "backbone"             "http://backbonejs.org/backbone-min.js"
+update "underscore"           "http://underscorejs.org/underscore-min.js"
+update "jquery"               "http://code.jquery.com/jquery-latest.min.js"
+update "backbone.marionette", "https://raw.github.com/derickbailey/backbone.marionette/master/lib/amd/backbone.marionette.js"
