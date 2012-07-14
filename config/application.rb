@@ -16,23 +16,6 @@ end
 require "pg"
 
 module BlankSlate
-  # Public: Load the .env file which contains environment variables necessary
-  # for this application. This will be loaded in development or test, in
-  # production heroku makes this variables available to us and we don't need
-  # such a file.
-  #
-  # Returns nil.
-  def self.load_env(file=Rails.root.join(".env"))
-    File.read(file).each_line do |line|
-      line.scan(/(^[^#][A-Z0-9_]+)=(.+)/).each do |key, val|
-        ENV[key] = val
-      end
-    end
-    nil
-  rescue Errno::ENOENT
-    $stderr.puts "[WARNING] No .env file, this will probably fail disastrously :D"
-  end
-
   class Application < Rails::Application
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
@@ -56,6 +39,3 @@ module BlankSlate
     config.assets.version = '1.0'
   end
 end
-
-# Load the ENV required for this app to run.
-BlankSlate.load_env

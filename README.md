@@ -15,13 +15,18 @@ Setup
 In order to bootstrap this application, run the following commands from the
 application directory:
 
+    $ gem install foreman
     $ bundle
     $ cp .env.sample .env # and edit any environment setting that you need
-    $ rake db:setup
-    $ rake
+    $ foreman run rake db:setup
+    $ foreman run rake
+
+To boot the application:
+
+    $ foreman start
 
 To run tests:
 
-    $ rake
+    $ foreman run rake
 
 Copyright (c) 2012 Nicolás Sanguinetti (http://nicolassanguinetti.info)
