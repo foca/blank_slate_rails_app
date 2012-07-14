@@ -32,9 +32,6 @@ GEM
     blankslate (2.1.2.4)
     bootstrap-sass (2.0.4.0)
     builder (3.0.0)
-    coffee-script (2.2.0)
-      coffee-script-source
-      execjs
     coffee-script-source (1.3.3)
     columnize (0.3.6)
     debugger (1.1.3)
@@ -47,7 +44,7 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    handlebars_assets (0.4.0)
+    handlebars_assets (0.5.0)
       execjs (>= 1.2.9)
       sprockets (>= 2.0.3)
       tilt
@@ -64,9 +61,9 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.19)
     minitest (3.2.0)
-    minitest-rails (0.1.0.alpha2)
+    minitest-rails (0.1)
       minitest (~> 3.0)
-      rails (~> 3.1)
+      rails (~> 3.0)
     multi_json (1.3.6)
     pg (0.14.0)
     polyglot (0.3.3)
@@ -87,8 +84,7 @@ GEM
       activesupport (= 3.2.6)
       bundler (~> 1.0)
       railties (= 3.2.6)
-    rails-behaviors (0.3.0)
-      coffee-script (~> 2.2)
+    rails-behaviors (0.4.0)
       coffee-script-source (~> 1.1)
       sprockets (~> 2.0)
     railties (3.2.6)
@@ -126,12 +122,12 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 2.0.4.0)
   debugger
-  handlebars_assets (~> 0.4)
+  handlebars_assets (~> 0.5)
   jbuilder
-  minitest-rails (= 0.1.0.alpha2)
+  minitest-rails (~> 0.1)
   pg
   puma
   rails (~> 3.2.6)
-  rails-behaviors (~> 0.3)
+  rails-behaviors (~> 0.4)
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
