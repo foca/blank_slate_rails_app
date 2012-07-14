@@ -17,6 +17,8 @@ group :assets do
 end
 
 group :test, :development do
-  gem 'minitest-rails', '~> 0.1'
+  gem 'minitest-rails'
+  gem 'minitest-rails-capybara'
+  gem 'poltergeist'
   gem 'debugger'
 end

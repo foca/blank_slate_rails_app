@@ -29,4 +29,9 @@ To run tests:
 
     $ foreman run rake
 
+We use [PhantomJS](phantom) for our integration tests. Make sure you have it
+installed.
+
+[phantom]: http://phantomjs.org
+
 Copyright (c) 2012 Nicolás Sanguinetti (http://nicolassanguinetti.info)
