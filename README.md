@@ -17,7 +17,7 @@ application directory:
 
     $ gem install foreman
     $ bundle
-    $ cp .env.sample .env # and edit any environment setting that you need
+    $ cp .env.sample .env; $EDITOR .env # Configure anything you need.
     $ foreman run rake db:setup
     $ foreman run rake
 
