@@ -9,6 +9,7 @@ gem 'jbuilder'
 gem 'puma'
 
 group :assets do
+  gem 'asset_sync',        '~> 0.4'
   gem 'rails-behaviors',   '~> 0.4'
   gem 'sass-rails',        '~> 3.2.3'
   gem 'uglifier',          '>= 1.0.3'
