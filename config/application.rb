@@ -5,13 +5,8 @@ require "action_controller/railtie"
 require "action_mailer/railtie"
 require "sprockets/railtie"
 
-if defined?(Bundler)
-  Bundler.setup(*Rails.groups(:assets => %w(development test)))
-end
-
-if Rails.groups.include?("assets") || Rails.env.development?
-  require_relative "asset_pipeline"
-end
+Bundler.setup(:default, Rails.env)
+Bundler.require(:assets) if Rails.groups.include?("assets")
 
 require "pg"
 
