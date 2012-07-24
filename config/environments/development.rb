@@ -1,3 +1,5 @@
+require "disable_assets_logger"
+
 BlankSlate::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
@@ -34,4 +36,7 @@ BlankSlate::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # Disable verbose logging of asset-pipeline requests
+  config.middleware.insert_before Rails::Rack::Logger, DisableAssetsLogger
 end
